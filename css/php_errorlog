@@ -1,0 +1,30 @@
+[06-Mar-2019 00:17:43 CST6CDT] PHP Fatal error:  Uncaught Leafo\ScssPhp\Exception\CompilerException: Undefined variable $f2: line: 734 in /home/blooblah/public_html/dev/gladel/wp-content/themes/openskull_wp/atlas_core/scssphp/src/Compiler.php:3532
+Stack trace:
+#0 /home/blooblah/public_html/dev/gladel/wp-content/themes/openskull_wp/atlas_core/scssphp/src/Compiler.php(3176): Leafo\ScssPhp\Compiler->throwError('Undefined varia...')
+#1 /home/blooblah/public_html/dev/gladel/wp-content/themes/openskull_wp/atlas_core/scssphp/src/Compiler.php(2145): Leafo\ScssPhp\Compiler->get('f2')
+#2 /home/blooblah/public_html/dev/gladel/wp-content/themes/openskull_wp/atlas_core/scssphp/src/Compiler.php(2020): Leafo\ScssPhp\Compiler->reduce(Array, true)
+#3 /home/blooblah/public_html/dev/gladel/wp-content/themes/openskull_wp/atlas_core/scssphp/src/Compiler.php(2175): Leafo\ScssPhp\Compiler->reduce(Array)
+#4 /home/blooblah/public_html/dev/gladel/wp-content/themes/openskull_wp/atlas_core/scssphp/src/Compiler.php(2149): Leafo\ScssPhp\Compiler->reduce(Array)
+#5 /home/blooblah/public_h in /home/blooblah/public_html/dev/gladel/wp-content/themes/openskull_wp/atlas_core/scssphp/src/Compiler.php on line 3532
+[06-Mar-2019 00:17:44 CST6CDT] PHP Fatal error:  Uncaught Leafo\ScssPhp\Exception\CompilerException: Undefined variable $f2: line: 734 in /home/blooblah/public_html/dev/gladel/wp-content/themes/openskull_wp/atlas_core/scssphp/src/Compiler.php:3532
+Stack trace:
+#0 /home/blooblah/public_html/dev/gladel/wp-content/themes/openskull_wp/atlas_core/scssphp/src/Compiler.php(3176): Leafo\ScssPhp\Compiler->throwError('Undefined varia...')
+#1 /home/blooblah/public_html/dev/gladel/wp-content/themes/openskull_wp/atlas_core/scssphp/src/Compiler.php(2145): Leafo\ScssPhp\Compiler->get('f2')
+#2 /home/blooblah/public_html/dev/gladel/wp-content/themes/openskull_wp/atlas_core/scssphp/src/Compiler.php(2020): Leafo\ScssPhp\Compiler->reduce(Array, true)
+#3 /home/blooblah/public_html/dev/gladel/wp-content/themes/openskull_wp/atlas_core/scssphp/src/Compiler.php(2175): Leafo\ScssPhp\Compiler->reduce(Array)
+#4 /home/blooblah/public_html/dev/gladel/wp-content/themes/openskull_wp/atlas_core/scssphp/src/Compiler.php(2149): Leafo\ScssPhp\Compiler->reduce(Array)
+#5 /home/blooblah/public_h in /home/blooblah/public_html/dev/gladel/wp-content/themes/openskull_wp/atlas_core/scssphp/src/Compiler.php on line 3532
+[11-Mar-2019 13:33:26 CST6CDT] PHP Fatal error:  Uncaught Leafo\ScssPhp\Exception\ParserException: unexpected }: failed at `.fill-white, .fill-white svg {fill: $white; }` (stdin) on line 722 in /home/blooblah/public_html/hosted/gladelynch/wp-content/themes/openskull_wp/atlas_core/scssphp/src/Parser.php:128
+Stack trace:
+#0 /home/blooblah/public_html/hosted/gladelynch/wp-content/themes/openskull_wp/atlas_core/scssphp/src/Parser.php(763): Leafo\ScssPhp\Parser->throwParseError('unexpected }')
+#1 /home/blooblah/public_html/hosted/gladelynch/wp-content/themes/openskull_wp/atlas_core/scssphp/src/Parser.php(673): Leafo\ScssPhp\Parser->popBlock()
+#2 /home/blooblah/public_html/hosted/gladelynch/wp-content/themes/openskull_wp/atlas_core/scssphp/src/Parser.php(164): Leafo\ScssPhp\Parser->parseChunk()
+#3 /home/blooblah/public_html/hosted/gladelynch/wp-content/themes/openskull_wp/atlas_core/scssphp/src/Compiler.php(197): Leafo\ScssPhp\Parser->parse('// Generate hel...')
+#4 /home/blooblah/public_html/hosted/gladelynch/wp-content/themes/openskull_wp/css/_style_compile.php( in /home/blooblah/public_html/hosted/gladelynch/wp-content/themes/openskull_wp/atlas_core/scssphp/src/Parser.php on line 128
+[11-Mar-2019 17:50:11 CST6CDT] PHP Fatal error:  Uncaught Leafo\ScssPhp\Exception\CompilerException: Undefined variable $pure-black: line: 782 in /home/blooblah/public_html/hosted/gladelynch/wp-content/themes/openskull_wp/atlas_core/scssphp/src/Compiler.php:3532
+Stack trace:
+#0 /home/blooblah/public_html/hosted/gladelynch/wp-content/themes/openskull_wp/atlas_core/scssphp/src/Compiler.php(3176): Leafo\ScssPhp\Compiler->throwError('Undefined varia...')
+#1 /home/blooblah/public_html/hosted/gladelynch/wp-content/themes/openskull_wp/atlas_core/scssphp/src/Compiler.php(2145): Leafo\ScssPhp\Compiler->get('pure-black')
+#2 /home/blooblah/public_html/hosted/gladelynch/wp-content/themes/openskull_wp/atlas_core/scssphp/src/Compiler.php(3639): Leafo\ScssPhp\Compiler->reduce(Array, true)
+#3 /home/blooblah/public_html/hosted/gladelynch/wp-content/themes/openskull_wp/atlas_core/scssphp/src/Compiler.php(2205): Leafo\ScssPhp\Compiler->callNativeFunction('rgba', Array, NULL)
+#4 /home/blooblah/public_html/hosted/gladelynch/wp-content/themes/openskull_wp/atlas_core/scssphp/src/ in /home/blooblah/public_html/hosted/gladelynch/wp-content/themes/openskull_wp/atlas_core/scssphp/src/Compiler.php on line 3532

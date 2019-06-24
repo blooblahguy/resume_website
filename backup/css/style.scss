@@ -1,0 +1,131 @@
+
+// OS Overrides
+body {color:#333; font-family: "Ubuntu", sans-serif; overflow-x: hidden; background: #eee;}
+.container { max-width: 1540px;}
+
+h1, h2, h3, h4, h5, h6, {
+	em {font-size: 0.9rem; font-weight:400;} 
+	span {font-size: 1.2rem; color: $primary; font-weight:400;}
+}
+
+.rightside {
+	h1, h2, h3, h4, h5, h6, {
+		margin-bottom: $g2;
+		i {
+			position: relative; color:#fff; z-index: 2; margin: 0 $g3 0 12px;
+			&:after { content: ''; position: absolute; top: 50%; left: 50%; @include prefix(transform, translate(-50%, -50%) rotate(45deg)); background: $primary; width: 50px; height: 50px; z-index: -1; border-radius:4px;}
+		}
+	}
+}
+
+// Material Icons
+i { font-family: 'Material Icons'; font-weight: normal; font-style: normal; display: inline-block; line-height: 0.8; text-transform: none; letter-spacing: normal; word-wrap: normal; white-space: nowrap; direction: ltr; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; -moz-osx-font-smoothing: grayscale; font-feature-settings: 'liga'; position: relative; top: 4px; color: $primary; margin: 0 4px;}
+
+// Custom colors
+.bg-blue {background: #006699; color:#fff;}
+.bg-green {background: #12211F; color:#fff;}
+
+
+// Forest
+.forest{
+	height:80vh; position: relative; background:#D1EBD4; min-height:600px;
+	img{ max-height:1000px; position:absolute; bottom: 0; left: -50%; min-width: 110%; max-width: 180% }
+	.introtext {position: absolute; bottom: 400px; left: 50%; @include prefix(transform, translateX(-50%)); text-align: center; z-index: 1000; }
+	h1 {font-weight:800; font-size: 4rem; text-shadow: 0 0 3px rgba(0,0,0,.5); margin-bottom: 0; text-transform: uppercase; letter-spacing: 2px; color: #fff;}
+	h2 {color: #fff; text-shadow: 1px 1px rgba(0,0,0,.5); font-style:italic; opacity:0.9;}
+
+}
+
+path,polyline,line { stroke-dasharray: 750; stroke-dashoffset: 750; stroke-width: 12px; stroke-miterlimit: 10; stroke-linejoin: round; fill: none; stroke: white; z-index: 1; opacity: 1; }
+
+// Sun
+.sun {  position: absolute; top:10vh; left:20%; margin: auto; width:70px; height:70px; border-radius:50%; background:white; opacity:0.9; box-shadow: 0px 0px 40px 15px white; }
+.ray_box { position: absolute; margin: auto; top:0px; left:0; right:0; bottom:0; width:70px; -webkit-animation: ray_anim 120s linear infinite; animation: ray_anim 120s linear infinite;}
+.ray { background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0) 100%);	background: linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0) 100%); 
+ margin-left:10px; border-radius:80% 80% 0 0; position:absolute; opacity:0.1;}
+.ray1 { height:170px; width:30px;-webkit-transform: rotate(180deg); top:-175px; left: 15px;}
+.ray2 { height:100px; width:8px;-webkit-transform: rotate(220deg); top:-90px; left: 75px;}
+.ray3 { height:170px; width:50px;-webkit-transform: rotate(250deg); top:-80px; left: 100px;}
+.ray4 { height:120px; width:14px;-webkit-transform: rotate(305deg); top:30px; left: 100px;}
+.ray5 { height:140px; width:30px;-webkit-transform: rotate(-15deg); top:60px; left: 40px;}
+.ray6 { height:90px; width:50px;-webkit-transform: rotate(30deg); top:60px; left: -40px;}
+.ray7 { height:180px; width:10px;-webkit-transform: rotate(70deg); top:-35px; left: -40px;}
+.ray8 { height:120px; width:30px;-webkit-transform: rotate(100deg); top:-45px; left:-90px;}
+.ray9 { height:80px; width:10px;-webkit-transform: rotate(120deg); top:-65px; left:-60px;}
+.ray10 { height:190px; width:23px;-webkit-transform: rotate(150deg); top:-185px; left: -60px;}
+
+
+@-webkit-keyframes ray_anim { 0% { -webkit-transform: rotate(0deg); transform: rotate(0deg);} 100% { -webkit-transform: rotate(360deg); transform: rotate(360deg);} }
+
+.section {padding: $g3 0;}
+
+
+// LEFTSIDE
+.me_intro {
+	.image {border-radius: 50%; border: 10px solid #fff; box-shadow: 0 1px 20px rgba(0,0,0,.4); overflow:hidden; max-width: 200px; max-height: 200px; margin: auto; margin-bottom: $g2; }
+}
+.info {
+	padding-bottom: $g2;
+	label {display:block;font-size: 1.3rem; opacity: 0.8; text-transform:uppercase; margin-bottom:0;}
+}
+.language {
+	padding-bottom:$g4;
+	.progress {
+		.os {position: relative; font-size:1.5rem; }
+		.os i {color: $grey;}
+		.os i {color: $grey;}
+		.os.active i {color: $secondary;}
+	}
+}
+
+.experience {
+	position: relative; padding-left: $g2; margin-left: $g2; margin-bottom:$g2;
+	&:before {content: ''; position: absolute; top: 10px; bottom: 8px; left: 0; width: 2px; background:#444; display:block;}
+	h5 {
+		color: #777; margin:0; position: relative;
+		&.from:before {position: absolute; content: ''; display:block; top: 8px; left: calc(-1.5rem - 4px); width: 10px; height: 10px; border-radius: 50%; background: $tertiary;}
+		&.to:before {position: absolute; content: ''; display:block; top: 8px; left: calc(-1.5rem - 2px); width: 6px; height: 6px; border-radius: 50%; background: $tertiary;}
+	}
+	h3 {color: $tertiary; margin:0;}
+	h4 {margin: 0;}
+	ul {padding:0;}
+	li {
+		position: relative; list-style:none; color: #777; display:block; padding-left: $g4; padding-bottom:$g1;
+		i {font-size:2.2rem; position: absolute; top: 0; left: 0; }
+		&:nth-child(odd) i {color:$secondary;}
+	}
+}
+
+.reference {
+	position: relative; padding-left: $g4;
+	&:before {content: ''; position: absolute; top: 10px; bottom: 8px; left: $g2; width: 2px; background:#444; display:block;}
+
+	h5, h3 {position: relative; color: #777; margin:0;}
+	h3:before {position: absolute; content: ''; display:block; top: 8px; left: calc(-1.5rem - 4px); width: 10px; height: 10px; border-radius: 50%; background: $tertiary;}
+	h5:after {position: absolute; content: ''; display:block; top: 10px; left: calc(-1.5rem - 2px); width: 6px; height: 6px; border-radius: 50%; background: $tertiary;}
+
+	h3 {color: $tertiary; margin:0;}
+	h4 {margin: 0;}
+	ul {padding:0;}
+	li {
+		position: relative; list-style:none; color: #777; display:block; padding-left: $g4; padding-bottom:$g1;
+		i {font-size:2.2rem; position: absolute; top: 0; left: 0; }
+		&:nth-child(odd) i {color:$secondary;}
+	}
+}
+
+
+// Medium
+@media screen and (max-width : 991px) {
+
+}
+
+// Small
+@media screen and (max-width : 767px) {
+
+}
+
+// Extra Small
+@media screen and (max-width : 475px) {
+
+}

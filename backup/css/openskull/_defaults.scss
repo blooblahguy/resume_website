@@ -1,0 +1,125 @@
+// Main spacing units
+$line-height: 1.8;
+$header-line-height: 1.5;
+$padding: 0.6rem;
+
+/////////////////////////
+// Layout
+/////////////////////////
+$viewport-md: 48rem !default; // 768px
+$viewport-lg: 64rem !default; // 1024px
+
+// if you have a fixed header, add this to your .anchor tags 
+// to make the document jump with an offset
+$anchor-offset: 49px !default;
+
+$g0: 0;
+$g1: $padding * 1;
+$g2: $padding * 2;
+$g3: $padding * 3;
+$g4: $padding * 4;
+
+$z-bg: -1;
+$z-low: 5;
+$z-medium: 10;
+$z-high: 20;
+
+/////////////////////////
+// Colors
+/////////////////////////
+$black: #333 !default;
+$pure-black: #000;
+
+$white: #fafafa !default;
+$pure-white: #fff;
+
+$grey: #ddd !default;
+$silver: #888 !default;
+$dark: #555 !default;
+
+$red: #e74c3c !default;
+$orange: #f39c12 !default;
+$blue: #3493d3 !default;
+$light-blue: lighten($blue, 10%) !default;
+$green: #22ac73 !default;
+
+$primary: $blue !default;
+$secondary: $green !default;
+
+$success: $green;
+$info: $light-blue;
+$warning: $orange;
+$error: $red;
+
+$link-color: $blue !default;
+
+$border-radius: 3px !default;
+$hover_diff: 7%;
+$animation-speed: 0.1s;
+
+// System
+$system_colors: (
+	black: (bg: $black, color: $white)
+	, white: (bg: $white, color: $black)
+
+	, primary: (bg: $primary, color: $white)
+	, secondary: (bg: $secondary, color: $white)
+
+	, success: (bg: $success, color: $black)
+	, info: (bg: $info, color: $black)
+	, warning: (bg: $warning, color: $black)
+	, error: (bg: $error, color: $black)
+
+	, grey: (bg: $grey, color: $black)
+	, dark: (bg: $dark, color: $white)
+);
+
+/////////////////////////
+// Typgraphy
+/////////////////////////
+$font-family-sans-serif:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+$font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+
+$font-color: $black !default;
+
+$font-size: 15px !default;
+$font-size-md: 15px !default;
+$font-size-lg: 16px !default;
+
+$font-weight: 400 !default;
+$font-weight-extralight: 100 !default;
+$font-weight-light: 300 !default;
+$font-weight-normal: $font-weight !default;
+$font-weight-bold: 600 !default;
+$font-weight-extrabold: 800 !default;
+
+$h1: (
+	size: 2.5rem
+	, color: inherit
+	, font-weight: 500
+);
+$h2: (
+	size: 2.1rem
+	, color: inherit
+	, font-weight: 500
+);
+$h3: (
+	size: 1.7rem
+	, color: inherit
+	, font-weight: 500
+);
+$h4: (
+	size: 1.3rem
+	, color: inherit
+	, font-weight: 500
+);
+$h5: (
+	size: 1.0rem
+	, color: inherit
+	, font-weight: 500
+);
+$h6: (
+	size: 0.8rem
+	, color: inherit
+	, font-weight: 500
+);
